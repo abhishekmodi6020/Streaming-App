@@ -13,3 +13,8 @@ export const signOut = () => {
     type: SIGN_OUT
   };
 };
+
+export const createStream = formValues => async dispatch => {
+  // Using post method to create new streams using our formValues
+  streams.post("/streams", formValues);
+};
