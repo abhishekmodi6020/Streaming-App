@@ -4,6 +4,11 @@
       "title": "obi wan kenobi",
       "description": "Hello there",
       "id": 1
+    },
+    {
+      "title": "some stream",
+      "description": "just something to enter",
+      "id": 2
     }
   ]
 }
