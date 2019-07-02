@@ -9,6 +9,12 @@
       "title": "some stream",
       "description": "just something to enter",
       "id": 2
+    },
+    {
+      "title": "user id test",
+      "description": "check whether this has userId associated with it",
+      "userId": "103044800002729711030",
+      "id": 3
     }
   ]
 }

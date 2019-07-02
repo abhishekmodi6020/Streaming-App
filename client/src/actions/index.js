@@ -24,9 +24,10 @@ export const signOut = () => {
 
 // CREATED ALL ACTION CREATORS SINCE WE KNOW WHAT RESPONSE WE ARE GETTING USING REST CONVENTIONS
 // action creator to create a stream on api
-export const createStream = formValues => async dispatch => {
+export const createStream = formValues => async (dispatch, getState) => {
+  const { userId } = getState().auth;
   // Using post method to create new streams using our formValues
-  const response = await streams.post("/streams", formValues);
+  const response = await streams.post("/streams", { ...formValues, userId });
   dispatch({ type: CREATE_STREAM, payload: response.data });
 };
 
