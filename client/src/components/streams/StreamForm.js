@@ -12,7 +12,6 @@ class StreamForm extends React.Component {
     }
   }
   renderInput = formProps => {
-    console.log(formProps);
     const className = `field ${
       formProps.meta.error && formProps.meta.touched ? "error" : ""
     }`;
