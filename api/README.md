@@ -1,10 +1,7 @@
 # Setting up JSON server as a API server(REST conventions):
 
 - Using JSON server instead of any express Server
-
-[documentation](https://www.npmjs.com/package/json-server)
-
-- Using a Single Core mode instead of Multicore cluster mode, because I am not expecting a lot of traffic on the
+  [documentation](https://www.npmjs.com/package/json-server)
 
 ## Steps to create json-server:
 
